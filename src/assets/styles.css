@@ -1,0 +1,13 @@
+
+h1 {
+  color: #FFF;
+  font-size: 2em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+nav>ul>li{
+  display: inline-block;
+  color: white;
+  margin: 10px 20px;
+  font-size: 1em
+}

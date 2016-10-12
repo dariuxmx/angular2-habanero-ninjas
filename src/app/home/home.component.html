@@ -1,0 +1,21 @@
+<p>
+  {{homeTitle}}
+</p>
+
+<ng-content></ng-content>
+
+<!-- property biding -->
+<div class="">
+<!--<input value = {{myString}} type="text" />
+<input required = {{myBoolean}} />
+<button (click) = "alertMe('Shut up')">Click me</button>-->
+<label>Name</label>
+<input [(ngModel)] = "ninja.name" />
+<label>Belt</label>
+<input [(ngModel)] = "ninja.belt" />
+
+<ul>
+  <li> {{ninja.name}}</li>
+  <li> {{ninja.belt}}</li>
+</ul>
+</div>

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -8,23 +8,18 @@ import { Component, OnInit, Input } from '@angular/core';
 export class HomeComponent implements OnInit {
   homeTitle = "Welcome to Habanero Ninja Directory";
   @Input() ninja;
-  /*myString = "I like habaneros";
-  myBoolean = true;
+  @Output() onYell = new EventEmitter();
 
-  ninja = {
-    name: "Marcus Fenix",
-    belt: "Black"
-  }
+  fireYellEvent(e){
+    this.onYell.emit(e);
+  };
 
-  alertMe(val){
-    alert(val);
-  }
-  */
-
-
-  constructor() { }
+constructor() {
+  console.log('Default method to be run when component is being constructed');
+}
 
   ngOnInit() {
+    console.log('Called when component is initializated');
   }
 
 }

@@ -3,14 +3,12 @@
 
   <nav>
     <ul>
-      <li>Dashboard</li>
-      <li>Contact Us</li>
-      <li>About</li>
+      <li><a class="mdl-navigation__link" [routerLink]="['/']">Home</a></li>
+      <li><a class="mdl-navigation__link" [routerLink]="['/directory']">Ninja Directory</a></li>
     </ul>
   </nav>
 </header>
 
 <section id="main">
-  <!-- To see this content go to home.component.html and add <ng-content></ng-content> -->
-  <app-home [ninja] = "ninja">Home component is alive!!!!</app-home>
+  <router-outlet></router-outlet>
 </section>

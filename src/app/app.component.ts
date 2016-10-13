@@ -16,16 +16,5 @@ import { HomeComponent } from './home/index';
 
 export class AppComponent {
   title = 'app works!';
-  name = 'Habanero Ninja';
-
-  ninja = {
-    name: "Marcus Fenix",
-    belt: "Black"
-  }
-
-  yell(e){
-    alert("I am yelling");
-    console.log(e);
-  }
 
 }

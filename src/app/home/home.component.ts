@@ -7,12 +7,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   homeTitle = "Welcome to Habanero Ninja Directory";
-  @Input() ninja;
-  @Output() onYell = new EventEmitter();
-
-  fireYellEvent(e){
-    this.onYell.emit(e);
-  };
+  
 
 constructor() {
   console.log('Default method to be run when component is being constructed');
